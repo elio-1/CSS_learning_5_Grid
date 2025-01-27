@@ -16,6 +16,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr 2fr);
     grid-auto-rows: minmax(150px,auto);
+    gap: 1em;
 }
 
 .box {
@@ -26,5 +27,11 @@ body {
 }
 
 
-
+.box:first-child {
+    background-color: rgb(69, 97, 87);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
